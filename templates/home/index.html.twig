@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div class="ryoko" style="background-image: url(https://images.unsplash.com/photo-1471500466955-85aecf33f71f?dpr=1&auto=compress,format&fit=crop&w=1200&h=800&q=80&cs=tinysrgb&crop=&bg=)">
+        <div class="ryoko-shade ryoko-body">
+            <div class="ryoko-faded ryoko-shadow text-white px-3 py-3 my-3">
+                <h3>SAPLOF</h3>
+                <p>Bienvenu sur la platforme</p>
+            </div>
+        </div>
+    </div>
+    <div class="container py-3">
+        <p class="lead">
+            {{ 'home.lead.paragraph' | trans | desc('Lorem ipsum dolor sit amet...') }}
+        </p>
+        <p>
+            {{ 'home.text.paragraph' | trans | desc('Lorem ipsum dolor sit amet...') }}
+        </p>
+    </div>
+{% endblock %}
